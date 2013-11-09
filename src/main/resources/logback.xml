@@ -10,6 +10,7 @@
 
 	<appender name="debug" class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<file>${user.dir}/debug.log</file>
+		<append>false</append>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<!-- daily rollover -->
 			<fileNamePattern>${user.dir}/debug.%d{yyyy-MM-dd}.log</fileNamePattern>
@@ -31,6 +32,7 @@
 
 	<appender name="error" class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<file>${user.dir}/error.log</file>
+		<append>false</append>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<!-- daily rollover -->
 			<fileNamePattern>${user.dir}/error.%d{yyyy-MM-dd}.log</fileNamePattern>
