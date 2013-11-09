@@ -75,7 +75,7 @@ public class PassengerPanel extends JPanel {
 		gbc_panel_2.gridy = 0;
 		add(panel_2, gbc_panel_2);
 		GridBagLayout gbl_panel_2 = new GridBagLayout();
-		gbl_panel_2.columnWidths = new int[] { 71, 0, 89, 150, 50, 100, 72, 0 };
+		gbl_panel_2.columnWidths = new int[] { 71, 0, 89, 150, 80, 100, 72, 0 };
 		gbl_panel_2.rowHeights = new int[] { 0, 0, 0 };
 		gbl_panel_2.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		gbl_panel_2.rowWeights = new double[] { 0.0, 0.0, Double.MIN_VALUE };
