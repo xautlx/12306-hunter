@@ -33,7 +33,7 @@ Java Swing C/S版本12306订票助手
 
 * 程序下载获取：
 
-简单方式是直接点击页面(https://github.com/xautlx/12306-hunter)右下方的“Download ZIP”，以zip压缩文件方式下载整个项目工程，然后解压缩到本地任何目录即可。
+简单方式是直接点击页面  (https://github.com/xautlx/12306-hunter) 右下方的“Download ZIP”，以zip压缩文件方式下载整个项目工程，然后解压缩到本地任何目录即可。
 
 当然如果你熟悉GitHub的使用或希望随时update最新代码或修改提交pull request，可通过GitHub支持的git、svn等多种方式check out整个工程代码和执行文件。
 
