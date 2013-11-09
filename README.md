@@ -102,7 +102,7 @@ TODD：考虑加入配置文件概念，如可以定制化请求间隔时间（�
 
 * **停止自动刷票：** 强制结束所有刷票线程。 
 
-### 友情链接
+### 友情推荐
 
 * [S2JH](https://github.com/xautlx/s2jh) - 作者项目：基于SSH的企业Web应用开发框架
 * [Nutch Htmlunit Plugin](https://github.com/xautlx/nutch-htmlunit) - 作者项目：基于Htmlunit扩展的Nutch支持AJAX页面抓取插件
