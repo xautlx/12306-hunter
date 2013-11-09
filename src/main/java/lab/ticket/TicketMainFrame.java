@@ -271,7 +271,7 @@ public class TicketMainFrame extends JFrame {
 		panel_4.add(label, gbc_label);
 
 		textExtraTrainDates = new JTextField();
-		textExtraTrainDates.setToolTipText("");
+		textExtraTrainDates.setToolTipText("主要用在指定多个日期刷“退票”");
 		textExtraTrainDates.setColumns(10);
 		GridBagConstraints gbc_textExtraTrainDates = new GridBagConstraints();
 		gbc_textExtraTrainDates.insets = new Insets(0, 0, 0, 5);
