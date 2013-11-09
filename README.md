@@ -7,3 +7,6 @@ Java Swing C/S版本12306订票助手
 
 基于HttpClient、Multiple Thread等主要技术的Java Swing桌面应用，至于说用途就不多说了，你懂的。
 
+* 直接以HTTP GET/POST发起最小数量必须的订票请求，相比浏览器插件方式更加快速高效；
+
+* 基于多线程多账号登录并发刷票，更高的订票成功率；
