@@ -52,13 +52,9 @@ import org.apache.http.util.EntityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 public class HttpClientService {
 
 	private static final Logger logger = LoggerFactory.getLogger(HttpClientService.class);
-
-	private static ObjectMapper objectMapper = new ObjectMapper();
 
 	// 获取登录提交的随机数
 	public static final String POST_UTL_LOGINACTION_LOGINAYSNSUGGEST = "https://dynamic.12306.cn/otsweb/loginAction.do?method=loginAysnSuggest";
@@ -394,9 +390,8 @@ public class HttpClientService {
 		try {
 			String responseHTML = postHttpRequestAsString(httpClient, POST_UTL_LOGINACTION_LOGINAYSNSUGGEST, null,
 					cookieData);
-			@SuppressWarnings("unchecked")
-			Map<String, String> json = objectMapper.readValue(responseHTML, Map.class);
-			return json.get("loginRand");
+			//{"loginRand":"628","randError":"Y"}
+			return StringUtils.substringBetween(responseHTML, "{\"loginRand\":\"", "\",\"randError\":\"Y\"}");
 		} catch (Exception e) {
 			throw new IllegalStateException(e);
 		} finally {
@@ -603,8 +598,7 @@ public class HttpClientService {
 		TrainQueryInfo trainQueryInfo = singleTrainOrderVO.getTrainQueryInfo();
 		try {
 			List<NameValuePair> parameters = new ArrayList<NameValuePair>();
-			parameters
-					.add(new BasicNameValuePair(GETQUEUECOUNT_FROM, ticketData.getTrainFromCode()));
+			parameters.add(new BasicNameValuePair(GETQUEUECOUNT_FROM, ticketData.getTrainFromCode()));
 			parameters.add(new BasicNameValuePair(GETQUEUECOUNT_SEAT, singleTrainOrderVO.getSeatType().getValue()));
 			parameters.add(new BasicNameValuePair(GETQUEUECOUNT_STATION, trainQueryInfo.getTrainNo()));
 			parameters.add(new BasicNameValuePair(GETQUEUECOUNT_TICKET, singleTrainOrderVO
