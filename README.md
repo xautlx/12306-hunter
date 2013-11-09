@@ -19,7 +19,7 @@ Java Swing C/S版本12306订票助手
 
 如果系统已安装过Java运行环境，则直接执行startup.bat即可。
 
-如果你不懂Java，那请自行访问Oracle下载安装Java运行环境：
+当然如果不懂Java也没关系，请自行访问Oracle下载安装Java运行环境：
 
 http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html
 
