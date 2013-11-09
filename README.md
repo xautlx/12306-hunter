@@ -7,8 +7,6 @@ Java Swing C/S版本12306订票助手
 
 基于HttpClient、Multiple Thread、File I/O等主要技术的Java Swing桌面应用，至于说用途就不多说了，你懂的。
 
-如果有任何问题或建议反馈，请到 https://github.com/xautlx/12306-hunter/issues 提交Issue；也欢迎本着交流进步为目的的改进优化代码并直接提交Pull Request。
-
 * 直接以HTTP GET/POST发起最小数量必须的订票请求，相比浏览器插件方式更加快速高效；
 
 * 基于多线程多账号登录并发刷票，更高的订票成功率；
@@ -16,6 +14,8 @@ Java Swing C/S版本12306订票助手
 * 基于文件记录最后输入的订票数据，提高交互友好体验；
 
 * 该程序只核心关注以最高效快速提交订票请求，不支持诸如自动登录、识别验证码、支付等其他高级功能！
+
+如果有任何问题或建议反馈，请到 https://github.com/xautlx/12306-hunter/issues 提交Issue；也欢迎本着交流进步为目的的改进优化代码并直接提交Pull Request。
 
 ### 用法说明
 
