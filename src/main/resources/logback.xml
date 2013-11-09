@@ -8,47 +8,28 @@
 		</encoder>
 	</appender>
 
-	<appender name="debug" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	<appender name="debug" class="ch.qos.logback.core.FileAppender">
 		<file>${user.dir}/debug.log</file>
 		<append>false</append>
-		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<!-- daily rollover -->
-			<fileNamePattern>${user.dir}/debug.%d{yyyy-MM-dd}.log</fileNamePattern>
-			<!-- keep 30 days worth of history -->
-			<maxHistory>30</maxHistory>
-			<maxFileSize>20MB</maxFileSize>
-		</rollingPolicy>
 		<filter class="ch.qos.logback.classic.filter.LevelFilter">
 			<level>DEBUG</level>
-			<onMatch>ACCEPT</onMatch>
-			<onMismatch>DENY</onMismatch>
 		</filter>
 		<encoder>
 			<pattern>
-				%d{HH:mm:ss.SSS} %-5level %logger{35} - %msg%n
+				%d{HH:mm:ss.SSS} %-5level %logger{10}[%line] - %msg%n
 			</pattern>
 		</encoder>
 	</appender>
 
-	<appender name="error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	<appender name="error" class="ch.qos.logback.core.FileAppender">
 		<file>${user.dir}/error.log</file>
 		<append>false</append>
-		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<!-- daily rollover -->
-			<fileNamePattern>${user.dir}/error.%d{yyyy-MM-dd}.log</fileNamePattern>
-			<!-- keep 30 days worth of history -->
-			<maxHistory>30</maxHistory>
-			<maxFileSize>20MB</maxFileSize>
-		</rollingPolicy>
 		<filter class="ch.qos.logback.classic.filter.LevelFilter">
 			<level>ERROR</level>
-			<onMatch>ACCEPT</onMatch>
-			<onMismatch>DENY</onMismatch>
 		</filter>
 		<encoder>
 			<pattern>
-				<!--%d{HH:mm:ss.SSS} %-5level %logger{35} - %msg%n -->
-				%d{HH:mm:ss.SSS} - %msg%n
+				%d{HH:mm:ss.SSS} %-5level %logger{10}[%line] - %msg%n
 			</pattern>
 		</encoder>
 	</appender>
