@@ -299,9 +299,7 @@ public class TicketMainFrame extends JFrame {
 		userPanelContainer.setLayout(new GridLayout(0, 1, 0, 0));
 
 		passengerPanelContainer = new JPanel();
-		passengerPanelContainer.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"),
-				"\u7B2C\u56DB\u6B65\uFF1A\u4E58\u8F66\u4EBA\u4FE1\u606F", TitledBorder.LEADING, TitledBorder.TOP, null,
-				null));
+		passengerPanelContainer.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "\u7B2C\u4E09\u6B65\uFF1A\u4E58\u8F66\u4EBA\u4FE1\u606F", TitledBorder.LEADING, TitledBorder.TOP, null, null));
 		GridBagConstraints gbc_passengerPanelContainer = new GridBagConstraints();
 		gbc_passengerPanelContainer.fill = GridBagConstraints.HORIZONTAL;
 		gbc_passengerPanelContainer.insets = new Insets(0, 0, 5, 0);
