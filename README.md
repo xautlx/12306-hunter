@@ -1,4 +1,4 @@
-12306-hunter:Java Swing C/S版本12306订票助手
+Java Swing C/S版本12306订票助手
 ============
 
 ### https://github.com/xautlx/12306-hunter
