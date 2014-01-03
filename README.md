@@ -1,6 +1,8 @@
 Java Swing C/S版本12306订票助手
 ============
 
+### 重要说明：由于12306网站已经全面切换为新版，此版本应用实现已经失效。由于年末较忙暂无更新计划，请另行选择其他最新主流订票助手。感谢关注。
+
 ### https://github.com/xautlx/12306-hunter
 
 ### http://git.oschina.net/xautlx/hunter-12306
