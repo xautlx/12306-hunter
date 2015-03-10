@@ -1,7 +1,7 @@
 Java Swing C/S版本12306订票助手
 ============
 
-### 重要说明：由于12306网站已经全面切换为新版，此版本应用实现已经失效。由于年末较忙暂无更新计划，请另行选择其他最新主流订票助手。感谢关注。
+### 重要说明：由于12306网站已经全面切换为新版，此版本应用实现已经失效。不再进行更新， 仅保留供参考。感谢关注。
 
 ### https://github.com/xautlx/12306-hunter
 
@@ -106,7 +106,16 @@ TODD：考虑加入配置文件概念，如可以定制化请求间隔时间（�
 
 * **停止自动刷票：** 强制结束所有刷票线程。 
 
-### 友情推荐
+### Reference
 
-* [S2JH](https://github.com/xautlx/s2jh) - 作者项目：基于SSH的企业Web应用开发框架
-* [Nutch Htmlunit Plugin](https://github.com/xautlx/nutch-htmlunit) - 作者项目：基于Htmlunit扩展的Nutch支持AJAX页面抓取插件
+欢迎关注作者其他项目：
+
+* [Nutch 2.X AJAX Plugins (Active)](https://github.com/xautlx/nutch-ajax) -  基于Apache Nutch 2.3和Htmlunit, Selenium WebDriver等组件扩展，实现对于AJAX加载类型页面的完整页面内容抓取，以及特定数据项的解析和索引
+
+* [S2JH4Net (Active)](https://github.com/xautlx/s2jh4net) -  基于Spring MVC+Spring+JPA+Hibernate的面向互联网及企业Web应用开发框架
+
+* [S2JH (Deprecated)](https://github.com/xautlx/s2jh) -  基于Struts2+Spring+JPA+Hibernate的面向企业Web应用开发框架
+ 
+* [Nutch 1.X AJAX Plugins (Deprecated)](https://github.com/xautlx/nutch-htmlunit) -  基于Apache Nutch 1.X和Htmlunit的扩展实现AJAX页面爬虫抓取解析插件
+ 
+* [12306 Hunter (Deprecated)](https://github.com/xautlx/12306-hunter) - （功能已失效不可用，不过还可以当作Swing开发样列参考只用）Java Swing C/S版本12306订票助手，用处你懂的
